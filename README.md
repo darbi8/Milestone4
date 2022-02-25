@@ -54,8 +54,8 @@ int main()
 		printWinner(winner);
 
 		printf("\nWould you like to play again? (Y/N): ");
-		scanf("%c");
-		scanf("%c", &response);
+		scanf_s("%c");
+		scanf_s("%c", &response);
 		response = toupper(response);
 	} while (response == 'Y');
 
@@ -117,7 +117,7 @@ void playerMove()
 	do
 	{
 		printf("Enter row #(1-3): ");
-		scanf("%d", &x);
+		scanf_s("%d", &x);
 		x--;
 		printf("Enter column #(1-3): ");
 		scanf("%d", &y);
